@@ -17,6 +17,8 @@ struct ContentView: View {
                     .padding(EdgeInsets(top: 50, leading: 0, bottom: 0, trailing: 0))
                 WaveAnimation()
                     .padding(EdgeInsets(top: 50, leading: 0, bottom: 0, trailing: 0))
+                DotsAnimation()
+                    .padding(EdgeInsets(top: 100, leading: 0, bottom: 0, trailing: 0))
             }.padding(30)
         }
     }
