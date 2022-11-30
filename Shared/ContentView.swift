@@ -10,15 +10,14 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Color.yellow
+            Color.init("bgColor")
+
             VStack {
-                DotsAnimation()
-                PacmanAnimation()
-                    .padding(EdgeInsets(top: 60, leading: 0, bottom: 0, trailing: 0))
-                TwinCircleAnimation()
-                    .padding(EdgeInsets(top: 50, leading: 0, bottom: 0, trailing: 0))
-            }.padding(30)
+                ThreeBounceAnimation()
+            }
+            .padding(30)
         }
+        .ignoresSafeArea()
     }
 }
 
