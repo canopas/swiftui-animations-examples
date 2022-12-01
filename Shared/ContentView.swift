@@ -13,7 +13,7 @@ struct ContentView: View {
             Color.init("bgColor")
 
             VStack {
-                ThreeBounceAnimation()
+                RotatingDotAnimation()
             }
             .padding(30)
         }
