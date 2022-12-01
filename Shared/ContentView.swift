@@ -12,8 +12,10 @@ struct ContentView: View {
         ZStack {
             Color.init("bgColor")
 
-            VStack {
+            VStack(spacing: 100) {
                 RotatingDotAnimation()
+                
+                ThreeBounceAnimation()
             }
             .padding(30)
         }
