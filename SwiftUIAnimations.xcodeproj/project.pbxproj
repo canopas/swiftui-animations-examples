@@ -25,6 +25,15 @@
 		9BEE82C1287D4B200047462A /* PacmanAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE82BF287D4B200047462A /* PacmanAnimation.swift */; };
 		9BEE82C3287D68380047462A /* TwinCircleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE82C2287D68380047462A /* TwinCircleAnimation.swift */; };
 		9BEE82C4287D68380047462A /* TwinCircleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE82C2287D68380047462A /* TwinCircleAnimation.swift */; };
+		D8017171293A313600F95578 /* HeartAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = D8017168293A313600F95578 /* HeartAnimation.gif */; };
+		D8017172293A313600F95578 /* ClockAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = D8017169293A313600F95578 /* ClockAnimation.gif */; };
+		D8017173293A313600F95578 /* RotatingDotAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = D801716A293A313600F95578 /* RotatingDotAnimation.gif */; };
+		D8017174293A313600F95578 /* DotAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = D801716B293A313600F95578 /* DotAnimation.gif */; };
+		D8017175293A313600F95578 /* TwinCircleAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = D801716C293A313600F95578 /* TwinCircleAnimation.gif */; };
+		D8017176293A313600F95578 /* WaveAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = D801716D293A313600F95578 /* WaveAnimation.gif */; };
+		D8017177293A313600F95578 /* StepperAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = D801716E293A313600F95578 /* StepperAnimation.gif */; };
+		D8017178293A313600F95578 /* ThreeBounceAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = D801716F293A313600F95578 /* ThreeBounceAnimation.gif */; };
+		D8017179293A313600F95578 /* PacmanAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = D8017170293A313600F95578 /* PacmanAnimation.gif */; };
 		D8B37187293731F20051A626 /* ThreeBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B37186293731F20051A626 /* ThreeBounceAnimation.swift */; };
 		D8B37188293731F20051A626 /* ThreeBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B37186293731F20051A626 /* ThreeBounceAnimation.swift */; };
 		D8B3718A29377BAD0051A626 /* RotatingDotAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B3718929377BAD0051A626 /* RotatingDotAnimation.swift */; };
@@ -46,6 +55,15 @@
 		9BA95BEC282523A200A43D98 /* WaveAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveAnimation.swift; sourceTree = "<group>"; };
 		9BEE82BF287D4B200047462A /* PacmanAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacmanAnimation.swift; sourceTree = "<group>"; };
 		9BEE82C2287D68380047462A /* TwinCircleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwinCircleAnimation.swift; sourceTree = "<group>"; };
+		D8017168293A313600F95578 /* HeartAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = HeartAnimation.gif; sourceTree = "<group>"; };
+		D8017169293A313600F95578 /* ClockAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ClockAnimation.gif; sourceTree = "<group>"; };
+		D801716A293A313600F95578 /* RotatingDotAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = RotatingDotAnimation.gif; sourceTree = "<group>"; };
+		D801716B293A313600F95578 /* DotAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = DotAnimation.gif; sourceTree = "<group>"; };
+		D801716C293A313600F95578 /* TwinCircleAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = TwinCircleAnimation.gif; sourceTree = "<group>"; };
+		D801716D293A313600F95578 /* WaveAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = WaveAnimation.gif; sourceTree = "<group>"; };
+		D801716E293A313600F95578 /* StepperAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = StepperAnimation.gif; sourceTree = "<group>"; };
+		D801716F293A313600F95578 /* ThreeBounceAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ThreeBounceAnimation.gif; sourceTree = "<group>"; };
+		D8017170293A313600F95578 /* PacmanAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = PacmanAnimation.gif; sourceTree = "<group>"; };
 		D8B37186293731F20051A626 /* ThreeBounceAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeBounceAnimation.swift; sourceTree = "<group>"; };
 		D8B3718929377BAD0051A626 /* RotatingDotAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingDotAnimation.swift; sourceTree = "<group>"; };
 		D8B3718C293881970051A626 /* ClockAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockAnimation.swift; sourceTree = "<group>"; };
@@ -73,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				9B59C2C0280852520016F2F8 /* Shared */,
+				D8017167293A313600F95578 /* GIF */,
 				9B59C2CF280852530016F2F8 /* macOS */,
 				9B59C2C9280852530016F2F8 /* Products */,
 			);
@@ -112,6 +131,22 @@
 				9B59C2D0280852530016F2F8 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		D8017167293A313600F95578 /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				D8017168293A313600F95578 /* HeartAnimation.gif */,
+				D8017169293A313600F95578 /* ClockAnimation.gif */,
+				D801716A293A313600F95578 /* RotatingDotAnimation.gif */,
+				D801716B293A313600F95578 /* DotAnimation.gif */,
+				D801716C293A313600F95578 /* TwinCircleAnimation.gif */,
+				D801716D293A313600F95578 /* WaveAnimation.gif */,
+				D801716E293A313600F95578 /* StepperAnimation.gif */,
+				D801716F293A313600F95578 /* ThreeBounceAnimation.gif */,
+				D8017170293A313600F95578 /* PacmanAnimation.gif */,
+			);
+			path = GIF;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +228,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8017171293A313600F95578 /* HeartAnimation.gif in Resources */,
+				D8017176293A313600F95578 /* WaveAnimation.gif in Resources */,
+				D8017172293A313600F95578 /* ClockAnimation.gif in Resources */,
+				D8017178293A313600F95578 /* ThreeBounceAnimation.gif in Resources */,
+				D8017177293A313600F95578 /* StepperAnimation.gif in Resources */,
+				D8017179293A313600F95578 /* PacmanAnimation.gif in Resources */,
 				9B59C2D5280852530016F2F8 /* Assets.xcassets in Resources */,
+				D8017173293A313600F95578 /* RotatingDotAnimation.gif in Resources */,
+				D8017174293A313600F95578 /* DotAnimation.gif in Resources */,
+				D8017175293A313600F95578 /* TwinCircleAnimation.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

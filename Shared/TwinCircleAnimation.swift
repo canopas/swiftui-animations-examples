@@ -14,26 +14,29 @@ struct TwinCircleAnimation: View {
 
     var body: some View {
         ZStack {
-            VStack{}.frame(width: 200, height: 200, alignment: .center)
+            VStack{}
+                .frame(width: 150, height: 150, alignment: .center)
                 .background(Color.white)
                 .cornerRadius(100.0)
-
-            VStack{}.frame(width: 100, height: 100, alignment: .center)
+            
+            VStack{}
+                .frame(width: 75, height: 75, alignment: .center)
                 .background(color1)
                 .cornerRadius(50)
                 .scaleEffect(abs(tz) * 0.3 + 1)
                 .offset(x: tz * 70, y: 0)
             
-            VStack{}.frame(width: 100, height: 100, alignment: .center)
+            VStack{}
+                .frame(width: 75, height: 75, alignment: .center)
                 .background(color2)
                 .cornerRadius(50)
                 .scaleEffect(abs(tz) * 0.3 + 1)
                 .offset(x: -tz * 70, y: 0)
-
-            }.frame(width: 200, height: 200)
-            .onAppear {
-                animate()
-            }
+        }
+        .frame(width: 150, height: 150)
+        .onAppear {
+            animate()
+        }
     }
     
     func animate() {
