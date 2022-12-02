@@ -10,7 +10,7 @@ import SwiftUI
 struct ClockAnimation: View {
     
     @State private var duration = 1.2
-    @State private var moveClockwise = false
+    @State private var startAnimation = false
     
     var body: some View {
         ZStack {
@@ -21,16 +21,16 @@ struct ClockAnimation: View {
             
             Line(type: .second)
                 .stroke(Color.blue, style: StrokeStyle(lineWidth: 5.5, lineCap: .round, lineJoin: .round))
-                .rotationEffect(.degrees(moveClockwise ? 360 : 0))
-                .animation(.linear(duration: duration).repeatForever(autoreverses: false), value: moveClockwise)
+                .rotationEffect(.degrees(startAnimation ? 360 : 0))
+                .animation(.linear(duration: duration).repeatForever(autoreverses: false), value: startAnimation)
             
             Line(type: .minute)
                 .stroke(Color.primary, style: StrokeStyle(lineWidth: 6, lineCap: .round, lineJoin: .round))
-                .rotationEffect(.degrees(moveClockwise ? 360 : 0))
-                .animation(.linear(duration: duration * 6).repeatForever(autoreverses: false), value: moveClockwise)
+                .rotationEffect(.degrees(startAnimation ? 360 : 0))
+                .animation(.linear(duration: duration * 6).repeatForever(autoreverses: false), value: startAnimation)
         }
         .onAppear {
-            self.moveClockwise.toggle()
+            self.startAnimation.toggle()
         }
     }
 }

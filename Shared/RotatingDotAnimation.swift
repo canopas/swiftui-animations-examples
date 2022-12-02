@@ -10,7 +10,7 @@ import Combine
 
 struct RotatingDotAnimation: View {
     
-    @State private var moveClockwise = false
+    @State private var startAnimation = false
     @State private var duration = 1.0 // Works as speed, since it repeats forever
     
     var body: some View {
@@ -24,13 +24,13 @@ struct RotatingDotAnimation: View {
                 .fill(.white)
                 .frame(width: 18, height: 18, alignment: .center)
                 .offset(x: -63)
-                .rotationEffect(.degrees(moveClockwise ? 360 : 0))
+                .rotationEffect(.degrees(startAnimation ? 360 : 0))
                 .animation(.easeInOut(duration: duration).repeatForever(autoreverses: false),
-                           value: moveClockwise
+                           value: startAnimation
                 )
         }
         .onAppear {
-            self.moveClockwise.toggle()
+            self.startAnimation.toggle()
         }
     }
 }

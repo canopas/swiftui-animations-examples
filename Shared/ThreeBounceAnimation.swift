@@ -43,7 +43,7 @@ struct ThreeBounceAnimation: View {
         }
 
         //Repeat
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             animateDots()
         }
     }
