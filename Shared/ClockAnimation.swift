@@ -6,28 +6,11 @@
 //
 
 import SwiftUI
-import Combine
-
-final class CurrentTime: ObservableObject {
-    @Published var seconds: TimeInterval = CurrentTime.currentSecond(date: Date())
-
-    private let timer = Timer.publish(every: 0.2, on: .main, in: .default).autoconnect()
-    private var store = Set<AnyCancellable>()
-
-    init() {
-        timer.map(Self.currentSecond).assign(to: \.seconds, on: self).store(in: &store)
-    }
-
-    private static func currentSecond(date: Date) -> TimeInterval {
-        let components = Calendar.current.dateComponents([.year, .month, .day], from: date)
-        let referenceDate = Calendar.current.date(from: DateComponents(year: components.year!, month: components.month!, day: components.day!))!
-        return Date().timeIntervalSince(referenceDate)
-    }
-}
 
 struct ClockAnimation: View {
     
-    @ObservedObject var time = CurrentTime()
+    @State private var duration = 1.2
+    @State private var moveClockwise = false
     
     var body: some View {
         ZStack {
@@ -36,78 +19,57 @@ struct ClockAnimation: View {
                 .background(Circle().fill(.white))
                 .frame(width: 150, height: 150, alignment: .center)
             
-            Clock(model: .init(type: .second, timeInterval: time.seconds))
-                .stroke(Color.blue, style: StrokeStyle(lineWidth: 5, lineCap: .round, lineJoin: .round))
-                .rotationEffect(Angle.degrees(360/60))
+            Line(type: .second)
+                .stroke(Color.blue, style: StrokeStyle(lineWidth: 5.5, lineCap: .round, lineJoin: .round))
+                .rotationEffect(.degrees(moveClockwise ? 360 : 0))
+                .animation(.linear(duration: duration).repeatForever(autoreverses: false), value: moveClockwise)
             
-            Clock(model: .init(type: .minute, timeInterval: time.seconds))
-                .stroke(Color.primary, style: StrokeStyle(lineWidth: 5, lineCap: .round, lineJoin: .round))
-                .rotationEffect(Angle.degrees(360/60))
+            Line(type: .minute)
+                .stroke(Color.primary, style: StrokeStyle(lineWidth: 6, lineCap: .round, lineJoin: .round))
+                .rotationEffect(.degrees(moveClockwise ? 360 : 0))
+                .animation(.linear(duration: duration * 6).repeatForever(autoreverses: false), value: moveClockwise)
+        }
+        .onAppear {
+            self.moveClockwise.toggle()
         }
     }
 }
-
-struct Clock: Shape {
-    var model: ClockTickerModel
-    
-    func path(in rect: CGRect) -> Path {
-        var path = Path()
-        let length = rect.width / 2
-        let center = CGPoint(x: rect.midX, y: rect.midY)
-
-        path.move(to: center)
-        let hoursAngle = CGFloat.pi / 2 - .pi * 2 * model.angleMultiplier
-        path.addLine(to: CGPoint(x: rect.midX + cos(hoursAngle) * length * model.tickerScale,
-                                 y: rect.midY - sin(hoursAngle) * length * model.tickerScale))
-        return path
-    }
-}
-
-struct ClockTickerModel {
-    enum TickerType {
-        case second
-        case hour
-        case minute
-    }
-    
-    let type: TickerType
-    let timeInterval: TimeInterval
-    
-    var angleMultiplier: CGFloat {
-        switch type {
-        case .second:
-            return CGFloat(self.timeInterval.remainder(dividingBy: 60)) / 60
-        case .hour:
-            return CGFloat(timeInterval / 3600) / 12
-        case .minute:
-            return CGFloat((timeInterval - Double(Int(timeInterval / 3600) * 3600)) / 60) / 60
-        }
-    }
-    
-    var tickerScale: CGFloat {
-        switch type {
-        case .second:
-            return 0.3
-        case .hour:
-            return 0.4
-        case .minute:
-            return 0.22
-        }
-    }
-}
-
 
 public struct Line: Shape {
-
-    public init() {}
-
+    
+    var lineType: LineType
+    
+    init(type: LineType) {
+        self.lineType = type
+    }
+    
     public func path(in rect: CGRect) -> Path {
         var path = Path()
-        path.move(to: CGPoint(x: 0, y: 0))
-        path.addLine(to: CGPoint(x: rect.width, y: 0))
+        let center = CGPoint(x: rect.midX, y: rect.midY)
+        
+        path.move(to: center)
+        
+        let length = rect.width / 2
+        path.addLine(to: CGPoint(x: rect.midX + (2 / .pi) * length * lineType.scale,
+                                 y: rect.midY - (2 / .pi) * length * lineType.scale))
         return path
     }
 }
+
+enum LineType {
+    case minute
+    case second
+    
+    var scale: CGFloat {
+        switch self {
+        case .minute:
+            return 0.25
+        case .second:
+            return 0.3
+        }
+    }
+}
+
 
 struct ClockAnimation_Previews: PreviewProvider {
     static var previews: some View {
