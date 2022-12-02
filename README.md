@@ -1,5 +1,5 @@
 # Swiftui-animations-examples
-Cool animations implemented with SwiftUI
+Cool animations implemented with SwiftUI.
 
 ## 🚀  Showcase
 
@@ -56,3 +56,33 @@ Cool animations implemented with SwiftUI
     </td>  
   </tr>
 <table>
+  
+  
+
+For detailed information about implementation checkout [article 1](https://blog.canopas.com/animations-in-swiftui-with-examples-dfb616fe467f), [article 2](https://blog.canopas.com/ios-animations-in-swiftui-with-examples-part-2-980a2df69145) & [article 3](https://medium.com/canopas/animations-in-swiftui-with-examples-part-3-56411ae2ffe0).
+
+
+# Bugs and Feedback
+For bugs, questions and discussions please use the [Github Issues](https://github.com/canopas/Swiftui-animations-examples/issues).
+
+# Credits
+This repository owned and maintained by the [Canopas team](https://canopas.com/). You can follow them on Twitter at [@canopassoftware](https://twitter.com/canopassoftware) for project updates and releases.
+  
+
+# Licence
+
+```
+Copyright 2022 Canopas Software LLP
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
