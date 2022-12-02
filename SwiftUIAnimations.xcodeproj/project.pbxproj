@@ -25,6 +25,12 @@
 		9BEE82C1287D4B200047462A /* PacmanAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE82BF287D4B200047462A /* PacmanAnimation.swift */; };
 		9BEE82C3287D68380047462A /* TwinCircleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE82C2287D68380047462A /* TwinCircleAnimation.swift */; };
 		9BEE82C4287D68380047462A /* TwinCircleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE82C2287D68380047462A /* TwinCircleAnimation.swift */; };
+		D8B37187293731F20051A626 /* ThreeBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B37186293731F20051A626 /* ThreeBounceAnimation.swift */; };
+		D8B37188293731F20051A626 /* ThreeBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B37186293731F20051A626 /* ThreeBounceAnimation.swift */; };
+		D8B3718A29377BAD0051A626 /* RotatingDotAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B3718929377BAD0051A626 /* RotatingDotAnimation.swift */; };
+		D8B3718B29377BAD0051A626 /* RotatingDotAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B3718929377BAD0051A626 /* RotatingDotAnimation.swift */; };
+		D8B3718D293881970051A626 /* ClockAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B3718C293881970051A626 /* ClockAnimation.swift */; };
+		D8B3718E293881970051A626 /* ClockAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B3718C293881970051A626 /* ClockAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +46,9 @@
 		9BA95BEC282523A200A43D98 /* WaveAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveAnimation.swift; sourceTree = "<group>"; };
 		9BEE82BF287D4B200047462A /* PacmanAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacmanAnimation.swift; sourceTree = "<group>"; };
 		9BEE82C2287D68380047462A /* TwinCircleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwinCircleAnimation.swift; sourceTree = "<group>"; };
+		D8B37186293731F20051A626 /* ThreeBounceAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeBounceAnimation.swift; sourceTree = "<group>"; };
+		D8B3718929377BAD0051A626 /* RotatingDotAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingDotAnimation.swift; sourceTree = "<group>"; };
+		D8B3718C293881970051A626 /* ClockAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,12 +84,15 @@
 				9B59C2C1280852520016F2F8 /* SwiftUIAnimationsApp.swift */,
 				9B59C2C2280852520016F2F8 /* ContentView.swift */,
 				9B59C2C3280852530016F2F8 /* Assets.xcassets */,
-				9BA95BE32825021E00A43D98 /* HeartAnimation.swift */,
-				9BA95BE62825023C00A43D98 /* StepperAnimation.swift */,
 				9BA95BE9282521F900A43D98 /* DotsAnimation.swift */,
 				9BA95BEC282523A200A43D98 /* WaveAnimation.swift */,
+				9BA95BE32825021E00A43D98 /* HeartAnimation.swift */,
+				9BA95BE62825023C00A43D98 /* StepperAnimation.swift */,
 				9BEE82BF287D4B200047462A /* PacmanAnimation.swift */,
 				9BEE82C2287D68380047462A /* TwinCircleAnimation.swift */,
+				D8B37186293731F20051A626 /* ThreeBounceAnimation.swift */,
+				D8B3718929377BAD0051A626 /* RotatingDotAnimation.swift */,
+				D8B3718C293881970051A626 /* ClockAnimation.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -147,7 +159,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					9B59C2C7280852530016F2F8 = {
 						CreatedOnToolsVersion = 13.3;
@@ -202,9 +214,12 @@
 			files = (
 				9BEE82C3287D68380047462A /* TwinCircleAnimation.swift in Sources */,
 				9BA95BE72825023C00A43D98 /* StepperAnimation.swift in Sources */,
+				D8B3718A29377BAD0051A626 /* RotatingDotAnimation.swift in Sources */,
 				9BA95BED282523A200A43D98 /* WaveAnimation.swift in Sources */,
 				9B59C2D3280852530016F2F8 /* ContentView.swift in Sources */,
+				D8B3718D293881970051A626 /* ClockAnimation.swift in Sources */,
 				9B59C2D1280852530016F2F8 /* SwiftUIAnimationsApp.swift in Sources */,
+				D8B37187293731F20051A626 /* ThreeBounceAnimation.swift in Sources */,
 				9BA95BEA282521F900A43D98 /* DotsAnimation.swift in Sources */,
 				9BA95BE42825021E00A43D98 /* HeartAnimation.swift in Sources */,
 				9BEE82C0287D4B200047462A /* PacmanAnimation.swift in Sources */,
@@ -217,9 +232,12 @@
 			files = (
 				9BEE82C4287D68380047462A /* TwinCircleAnimation.swift in Sources */,
 				9BA95BE82825023C00A43D98 /* StepperAnimation.swift in Sources */,
+				D8B3718B29377BAD0051A626 /* RotatingDotAnimation.swift in Sources */,
 				9BA95BEE282523A200A43D98 /* WaveAnimation.swift in Sources */,
 				9B59C2D4280852530016F2F8 /* ContentView.swift in Sources */,
+				D8B3718E293881970051A626 /* ClockAnimation.swift in Sources */,
 				9B59C2D2280852530016F2F8 /* SwiftUIAnimationsApp.swift in Sources */,
+				D8B37188293731F20051A626 /* ThreeBounceAnimation.swift in Sources */,
 				9BA95BEB282521F900A43D98 /* DotsAnimation.swift in Sources */,
 				9BA95BE52825021E00A43D98 /* HeartAnimation.swift in Sources */,
 				9BEE82C1287D4B200047462A /* PacmanAnimation.swift in Sources */,
@@ -262,6 +280,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -320,6 +339,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -403,9 +423,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -429,9 +451,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";

@@ -31,6 +31,7 @@ struct StepperAnimation: View {
                     .onTapGesture {
                         onFlipPrevious()
                     }
+                    
                     VStack {
                     }
                     .frame(width: 125, height: 100, alignment: .trailing)

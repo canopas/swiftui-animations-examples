@@ -24,7 +24,7 @@ struct PacmanAnimation: View {
                 context.fill(path, with: .color(.white))
                 context.fill(Path(ellipseIn: CGRect(x: size.width / 2, y: size.height / 4, width: 10, height: 10)), with: .color(.black))
             }
-            .frame(width: 200, height: 200)
+            .frame(width: 150, height: 150)
         }
     }
 }

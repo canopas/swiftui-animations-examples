@@ -36,7 +36,7 @@ struct DotsAnimation: View {
     }
     
     func animateDots() {
-        for (index, data) in DotsAnimation.DATA.enumerated() {
+        for (index, data) in Self.DATA.enumerated() {
             DispatchQueue.main.asyncAfter(deadline: .now() + data.delay) {
                 animateDot(binding: $transY[index], animationData: data)
             }
@@ -60,10 +60,9 @@ struct DotsAnimation: View {
 
         }
     }
-
 }
 
-struct DotView: View {
+private struct DotView: View {
     @Binding var transY: CGFloat
 
     var body: some View {
