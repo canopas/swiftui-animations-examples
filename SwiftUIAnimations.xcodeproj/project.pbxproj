@@ -29,6 +29,8 @@
 		D8B37188293731F20051A626 /* ThreeBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B37186293731F20051A626 /* ThreeBounceAnimation.swift */; };
 		D8B3718A29377BAD0051A626 /* RotatingDotAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B3718929377BAD0051A626 /* RotatingDotAnimation.swift */; };
 		D8B3718B29377BAD0051A626 /* RotatingDotAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B3718929377BAD0051A626 /* RotatingDotAnimation.swift */; };
+		D8B3718D293881970051A626 /* ClockAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B3718C293881970051A626 /* ClockAnimation.swift */; };
+		D8B3718E293881970051A626 /* ClockAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B3718C293881970051A626 /* ClockAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,7 @@
 		9BEE82C2287D68380047462A /* TwinCircleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwinCircleAnimation.swift; sourceTree = "<group>"; };
 		D8B37186293731F20051A626 /* ThreeBounceAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeBounceAnimation.swift; sourceTree = "<group>"; };
 		D8B3718929377BAD0051A626 /* RotatingDotAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingDotAnimation.swift; sourceTree = "<group>"; };
+		D8B3718C293881970051A626 /* ClockAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,7 @@
 				9BEE82C2287D68380047462A /* TwinCircleAnimation.swift */,
 				D8B37186293731F20051A626 /* ThreeBounceAnimation.swift */,
 				D8B3718929377BAD0051A626 /* RotatingDotAnimation.swift */,
+				D8B3718C293881970051A626 /* ClockAnimation.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -213,6 +217,7 @@
 				D8B3718A29377BAD0051A626 /* RotatingDotAnimation.swift in Sources */,
 				9BA95BED282523A200A43D98 /* WaveAnimation.swift in Sources */,
 				9B59C2D3280852530016F2F8 /* ContentView.swift in Sources */,
+				D8B3718D293881970051A626 /* ClockAnimation.swift in Sources */,
 				9B59C2D1280852530016F2F8 /* SwiftUIAnimationsApp.swift in Sources */,
 				D8B37187293731F20051A626 /* ThreeBounceAnimation.swift in Sources */,
 				9BA95BEA282521F900A43D98 /* DotsAnimation.swift in Sources */,
@@ -230,6 +235,7 @@
 				D8B3718B29377BAD0051A626 /* RotatingDotAnimation.swift in Sources */,
 				9BA95BEE282523A200A43D98 /* WaveAnimation.swift in Sources */,
 				9B59C2D4280852530016F2F8 /* ContentView.swift in Sources */,
+				D8B3718E293881970051A626 /* ClockAnimation.swift in Sources */,
 				9B59C2D2280852530016F2F8 /* SwiftUIAnimationsApp.swift in Sources */,
 				D8B37188293731F20051A626 /* ThreeBounceAnimation.swift in Sources */,
 				9BA95BEB282521F900A43D98 /* DotsAnimation.swift in Sources */,

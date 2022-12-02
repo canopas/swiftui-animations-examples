@@ -13,11 +13,17 @@ struct ContentView: View {
             Color.init("bgColor")
 
             VStack(spacing: 100) {
-                RotatingDotAnimation()
+                Spacer()
                 
-                ThreeBounceAnimation()
+//                RotatingDotAnimation()
+//                
+//                ThreeBounceAnimation()
+                
+                ClockAnimation()
+                
+                Spacer()
             }
-            .padding(30)
+            .padding(20)
         }
         .ignoresSafeArea()
     }
