@@ -17,7 +17,6 @@ struct ClockAnimation: View {
             Circle()
                 .stroke(.black, lineWidth: 2)
                 .background(Circle().fill(.white))
-                .frame(width: 150, height: 150, alignment: .center)
             
             Line(type: .second)
                 .stroke(Color.blue, style: StrokeStyle(lineWidth: 5.5, lineCap: .round, lineJoin: .round))
@@ -29,6 +28,7 @@ struct ClockAnimation: View {
                 .rotationEffect(.degrees(startAnimation ? 360 : 0))
                 .animation(.linear(duration: duration * 6).repeatForever(autoreverses: false), value: startAnimation)
         }
+        .frame(width: 150, height: 150, alignment: .center)
         .onAppear {
             self.startAnimation.toggle()
         }
@@ -48,10 +48,7 @@ public struct Line: Shape {
         let center = CGPoint(x: rect.midX, y: rect.midY)
         
         path.move(to: center)
-        
-        let length = rect.width / 2
-        path.addLine(to: CGPoint(x: rect.midX + (2 / .pi) * length * lineType.scale,
-                                 y: rect.midY - (2 / .pi) * length * lineType.scale))
+        path.addLine(to: CGPoint(x: rect.width * lineType.scale, y: rect.width * lineType.scale))
         return path
     }
 }
@@ -63,9 +60,9 @@ enum LineType {
     var scale: CGFloat {
         switch self {
         case .minute:
-            return 0.25
-        case .second:
             return 0.3
+        case .second:
+            return 0.2
         }
     }
 }
