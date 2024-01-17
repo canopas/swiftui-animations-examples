@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PacmanAnimation: View {
     
-    @State var color: Color = .yellow
+    @State var color: Color
     
     init(color: Color) {
         self.color = color

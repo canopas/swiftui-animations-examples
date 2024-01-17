@@ -15,7 +15,7 @@ struct ArcRotationAnimation: View {
     @State private var arcAngle2: Double = 180
     @State private var circleHeight: CGFloat = 135
     
-    @State var color: Color = .black
+    @State var color: Color
     
     init(color: Color) {
         self.color = color

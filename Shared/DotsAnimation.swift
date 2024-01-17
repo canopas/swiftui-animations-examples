@@ -20,7 +20,7 @@ struct DotsAnimation: View {
         AnimationData(delay: 0.2, ty: -70),
     ]
 
-    @State var color: Color = .black
+    @State var color: Color
     @State var transY: [CGFloat] = DATA.map { _ in return 0 }
     
     var animation = Animation.easeInOut.speed(0.6)

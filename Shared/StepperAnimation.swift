@@ -13,7 +13,8 @@ struct StepperAnimation: View {
     @State var front: Int = 0
     @State var back: Int = 0
     @State var animatedAngle = 0.0
-    @State var color: Color = .yellow
+    
+    @State var color: Color
     
     init(color: Color) {
         self.color = color
