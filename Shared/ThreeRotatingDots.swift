@@ -10,7 +10,8 @@ import SwiftUI
 struct ThreeRotatingDots: View {
     
     @State var isAnimating: Bool = false
-    @State var color: Color = .black
+    
+    @State var color: Color
     
     private let height: CGFloat = 40
     

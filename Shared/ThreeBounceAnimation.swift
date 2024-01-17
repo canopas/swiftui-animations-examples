@@ -20,7 +20,8 @@ struct ThreeBounceAnimation: View {
         AnimationData(delay: 0.4),
     ]
 
-    @State var color: Color = .black
+    @State var color: Color
+    
     @State var scales: [CGFloat] = DATA.map { _ in return 0 }
 
     var animation = Animation.easeInOut.speed(0.5)

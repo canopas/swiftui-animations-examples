@@ -13,8 +13,8 @@ struct WaveAnimation: View {
     @State var scale2: CGFloat = 0
     @State var scale3: CGFloat = 0
     
-    @State var color: Color = .black
-    @State var iconColor: Color = .white
+    @State var color: Color
+    @State var iconColor: Color
     
     init(color: Color, iconColor: Color) {
         self.color = color

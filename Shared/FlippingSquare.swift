@@ -12,9 +12,9 @@ struct FlippingSquare: View {
     @State private var isAnimatingOuter = false
     @State private var isAnimatingInner = false
     
-    @State var color: Color = .black
+    @State var color: Color
     
-    let height: CGFloat = 160
+    let height: CGFloat = 120
     
     init(color: Color) {
         self.color = color

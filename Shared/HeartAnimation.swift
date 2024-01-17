@@ -11,7 +11,8 @@ struct HeartAnimation: View {
     
     @State var transY: CGFloat = 0
     @State var alpha: CGFloat = 1.0
-    @State var color: Color = .black
+    
+    @State var color: Color
 
     var foreverAnimation = Animation.linear.speed(0.3).repeatForever(autoreverses: true)
     

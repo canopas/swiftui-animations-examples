@@ -11,7 +11,7 @@ import Combine
 struct ThreeCircleBlinkDots: View {
     
     @State var current = 0
-    @State var color: Color = .black
+    @State var color: Color
     
     private let totalDots = 7
     private let height: CGFloat = 100

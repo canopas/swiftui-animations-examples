@@ -13,7 +13,7 @@ struct RotatingDotAnimation: View {
     @State private var startAnimation = false
     @State private var duration = 1.0 // Works as speed, since it repeats forever
     
-    @State var color: Color = .black
+    @State var color: Color
     
     init(color: Color) {
         self.color = color
