@@ -34,10 +34,10 @@ Cool animations implemented with SwiftUI.
   </tr>
   <tr>
     <td align="center">
-      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/ThreeBounceAnimation.gif" width="250px" height="250px">
-      <br /> Three Bounce Dot
-    </td>   
-     <td align="center">
+      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/WaveAnimation.gif" width="250px" height="250px">
+      <br /> Wave Animation
+    </td>
+    <td align="center">
       <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/TwinCircleAnimation.gif" width="250px" height="250px">
       <br /> Twin Circle Transition
     </td>
@@ -50,8 +50,8 @@ Cool animations implemented with SwiftUI.
     <td align="center">
       <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/FlippingSquare.gif" width="250px" height="250px">
       <br /> Flipping Square
-    </td>   
-     <td align="center">
+    </td>
+    <td align="center">
       <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/ArcRotationAnimation.gif" width="250px" height="250px">
       <br /> Arc Rotation
     </td>
@@ -62,16 +62,16 @@ Cool animations implemented with SwiftUI.
   </tr>
   <tr>
     <td align="center">
-      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/ThreeRotatingDots.gif" width="250px" height="250px">
-      <br /> Three Rotating Dot
-    </td>   
-     <td align="center">
       <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/ThreeCircleBlinkDots.gif" width="250px" height="250px">
       <br /> Circle Blink Dots
     </td>
     <td align="center">
-      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/WaveAnimation.gif" width="250px" height="250px">
-      <br /> Wave Animation
+      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/ThreeRotatingDots.gif" width="250px" height="250px">
+      <br /> Three Rotating Dot
+    </td>
+    <td align="center">
+      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/ThreeBounceAnimation.gif" width="250px" height="250px">
+      <br /> Three Bounce Dot
     </td>
   </tr>
 <table>
