@@ -44,6 +44,12 @@
 		D81A81A42B56CCF3003C270D /* TwinCircleScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A81A22B56CCF3003C270D /* TwinCircleScale.swift */; };
 		D81A81A62B57A98A003C270D /* SquareFillAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A81A52B57A98A003C270D /* SquareFillAnimation.swift */; };
 		D81A81A72B57A98A003C270D /* SquareFillAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A81A52B57A98A003C270D /* SquareFillAnimation.swift */; };
+		D81A81BA2B580A66003C270D /* FlippingSquare.gif in Resources */ = {isa = PBXBuildFile; fileRef = D81A81B42B580A65003C270D /* FlippingSquare.gif */; };
+		D81A81BB2B580A66003C270D /* ThreeTriangleRotatingDots.gif in Resources */ = {isa = PBXBuildFile; fileRef = D81A81B52B580A65003C270D /* ThreeTriangleRotatingDots.gif */; };
+		D81A81BC2B580A66003C270D /* ArcRotationAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = D81A81B62B580A65003C270D /* ArcRotationAnimation.gif */; };
+		D81A81BD2B580A66003C270D /* ThreeRotatingDots.gif in Resources */ = {isa = PBXBuildFile; fileRef = D81A81B72B580A65003C270D /* ThreeRotatingDots.gif */; };
+		D81A81BE2B580A66003C270D /* ThreeCircleBlinkDots.gif in Resources */ = {isa = PBXBuildFile; fileRef = D81A81B82B580A65003C270D /* ThreeCircleBlinkDots.gif */; };
+		D81A81BF2B580A66003C270D /* TwinCircleScale.gif in Resources */ = {isa = PBXBuildFile; fileRef = D81A81B92B580A66003C270D /* TwinCircleScale.gif */; };
 		D8557BA42B5552FA0072E03D /* ThreeTriangleRotatingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8557BA32B5552FA0072E03D /* ThreeTriangleRotatingDots.swift */; };
 		D8557BA52B5552FA0072E03D /* ThreeTriangleRotatingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8557BA32B5552FA0072E03D /* ThreeTriangleRotatingDots.swift */; };
 		D8557BA72B555CAE0072E03D /* ThreeRotatingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8557BA62B555CAE0072E03D /* ThreeRotatingDots.swift */; };
@@ -85,6 +91,12 @@
 		D81A819F2B56C538003C270D /* ArcRotationAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcRotationAnimation.swift; sourceTree = "<group>"; };
 		D81A81A22B56CCF3003C270D /* TwinCircleScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwinCircleScale.swift; sourceTree = "<group>"; };
 		D81A81A52B57A98A003C270D /* SquareFillAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareFillAnimation.swift; sourceTree = "<group>"; };
+		D81A81B42B580A65003C270D /* FlippingSquare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = FlippingSquare.gif; sourceTree = "<group>"; };
+		D81A81B52B580A65003C270D /* ThreeTriangleRotatingDots.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ThreeTriangleRotatingDots.gif; sourceTree = "<group>"; };
+		D81A81B62B580A65003C270D /* ArcRotationAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ArcRotationAnimation.gif; sourceTree = "<group>"; };
+		D81A81B72B580A65003C270D /* ThreeRotatingDots.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ThreeRotatingDots.gif; sourceTree = "<group>"; };
+		D81A81B82B580A65003C270D /* ThreeCircleBlinkDots.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ThreeCircleBlinkDots.gif; sourceTree = "<group>"; };
+		D81A81B92B580A66003C270D /* TwinCircleScale.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = TwinCircleScale.gif; sourceTree = "<group>"; };
 		D8557BA32B5552FA0072E03D /* ThreeTriangleRotatingDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeTriangleRotatingDots.swift; sourceTree = "<group>"; };
 		D8557BA62B555CAE0072E03D /* ThreeRotatingDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeRotatingDots.swift; sourceTree = "<group>"; };
 		D8557BA92B564B270072E03D /* ThreeHorizontalRotatingDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeHorizontalRotatingDots.swift; sourceTree = "<group>"; };
@@ -177,6 +189,12 @@
 				D801716E293A313600F95578 /* StepperAnimation.gif */,
 				D801716F293A313600F95578 /* ThreeBounceAnimation.gif */,
 				D8017170293A313600F95578 /* PacmanAnimation.gif */,
+				D81A81B62B580A65003C270D /* ArcRotationAnimation.gif */,
+				D81A81B42B580A65003C270D /* FlippingSquare.gif */,
+				D81A81B82B580A65003C270D /* ThreeCircleBlinkDots.gif */,
+				D81A81B72B580A65003C270D /* ThreeRotatingDots.gif */,
+				D81A81B52B580A65003C270D /* ThreeTriangleRotatingDots.gif */,
+				D81A81B92B580A66003C270D /* TwinCircleScale.gif */,
 			);
 			path = GIF;
 			sourceTree = "<group>";
@@ -261,15 +279,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8017171293A313600F95578 /* HeartAnimation.gif in Resources */,
+				D81A81BB2B580A66003C270D /* ThreeTriangleRotatingDots.gif in Resources */,
 				D8017176293A313600F95578 /* WaveAnimation.gif in Resources */,
+				D81A81BF2B580A66003C270D /* TwinCircleScale.gif in Resources */,
 				D8017172293A313600F95578 /* ClockAnimation.gif in Resources */,
 				D8017178293A313600F95578 /* ThreeBounceAnimation.gif in Resources */,
+				D81A81BE2B580A66003C270D /* ThreeCircleBlinkDots.gif in Resources */,
 				D8017177293A313600F95578 /* StepperAnimation.gif in Resources */,
 				D8017179293A313600F95578 /* PacmanAnimation.gif in Resources */,
 				9B59C2D5280852530016F2F8 /* Assets.xcassets in Resources */,
 				D8017173293A313600F95578 /* RotatingDotAnimation.gif in Resources */,
+				D81A81BC2B580A66003C270D /* ArcRotationAnimation.gif in Resources */,
 				D8017174293A313600F95578 /* DotAnimation.gif in Resources */,
+				D81A81BD2B580A66003C270D /* ThreeRotatingDots.gif in Resources */,
 				D8017175293A313600F95578 /* TwinCircleAnimation.gif in Resources */,
+				D81A81BA2B580A66003C270D /* FlippingSquare.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
