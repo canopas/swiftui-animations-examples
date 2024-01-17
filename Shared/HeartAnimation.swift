@@ -11,16 +11,19 @@ struct HeartAnimation: View {
     
     @State var transY: CGFloat = 0
     @State var alpha: CGFloat = 1.0
+    @State var color: Color = .black
 
-    var foreverAnimation =
-        Animation.linear.speed(0.3)
-            .repeatForever(autoreverses: true)
+    var foreverAnimation = Animation.linear.speed(0.3).repeatForever(autoreverses: true)
+    
+    init(color: Color) {
+        self.color = color
+    }
 
     var body: some View {
         VStack {
             Image(systemName: "heart.fill")
                 .font(.system(size: 60))
-                .foregroundColor(Color.white)
+                .foregroundColor(color)
                 .offset(x: 0, y: transY)
                 .onAppear {
                     withAnimation(foreverAnimation) {
@@ -30,7 +33,7 @@ struct HeartAnimation: View {
             VStack{
                 
             }.frame(width: 50, height: 10, alignment: .center)
-                .background(Color.white)
+                .background(color)
                 .cornerRadius(10.0)
                     .opacity(alpha)
                     .scaleEffect(x: alpha, y: 1.0, anchor: UnitPoint.center)
@@ -45,6 +48,6 @@ struct HeartAnimation: View {
 
 struct HeartAnimation_Previews: PreviewProvider {
     static var previews: some View {
-        HeartAnimation()
+        HeartAnimation(color: .black)
     }
 }

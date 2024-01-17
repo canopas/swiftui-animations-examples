@@ -20,15 +20,20 @@ struct ThreeBounceAnimation: View {
         AnimationData(delay: 0.4),
     ]
 
+    @State var color: Color = .black
     @State var scales: [CGFloat] = DATA.map { _ in return 0 }
 
     var animation = Animation.easeInOut.speed(0.5)
+    
+    init(color: Color) {
+        self.color = color
+    }
 
     var body: some View {
         HStack {
-            DotView(scale: .constant(scales[0]))
-            DotView(scale: .constant(scales[1]))
-            DotView(scale: .constant(scales[2]))
+            DotView(color: .constant(color), scale: .constant(scales[0]))
+            DotView(color: .constant(color), scale: .constant(scales[1]))
+            DotView(color: .constant(color), scale: .constant(scales[2]))
         }
         .onAppear {
             animateDots()
@@ -63,19 +68,20 @@ struct ThreeBounceAnimation: View {
 
 private struct DotView: View {
     
+    @Binding var color: Color
     @Binding var scale: CGFloat
 
     var body: some View {
         Circle()
             .scale(scale)
-            .fill(.white.opacity(scale >= 0.7 ? scale : scale - 0.1))
+            .fill(color.opacity(scale >= 0.7 ? scale : scale - 0.1))
             .frame(width: 50, height: 50, alignment: .center)
     }
 }
 
 struct ThreeBounceAnimation_Previews: PreviewProvider {
     static var previews: some View {
-        ThreeBounceAnimation()
+        ThreeBounceAnimation(color: .black)
     }
 }
 

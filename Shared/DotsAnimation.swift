@@ -20,15 +20,20 @@ struct DotsAnimation: View {
         AnimationData(delay: 0.2, ty: -70),
     ]
 
+    @State var color: Color = .black
     @State var transY: [CGFloat] = DATA.map { _ in return 0 }
     
     var animation = Animation.easeInOut.speed(0.6)
+    
+    init(color: Color) {
+        self.color = color
+    }
 
     var body: some View {
         HStack {
-            DotView(transY: $transY[0])
-            DotView(transY: $transY[1])
-            DotView(transY: $transY[2])
+            DotView(color: .constant(color), transY: $transY[0])
+            DotView(color: .constant(color), transY: $transY[1])
+            DotView(color: .constant(color), transY: $transY[2])
         }
         .onAppear {
             animateDots()
@@ -63,18 +68,21 @@ struct DotsAnimation: View {
 }
 
 private struct DotView: View {
+    
+    @Binding var color: Color
     @Binding var transY: CGFloat
-
+    
     var body: some View {
-            VStack{}.frame(width: 40, height: 40, alignment: .center)
-                .background(Color.white)
-                .cornerRadius(20.0)
-                .offset(x: 0, y: transY)
+        VStack{ }
+            .frame(width: 40, height: 40, alignment: .center)
+            .background(color)
+            .cornerRadius(20.0)
+            .offset(x: 0, y: transY)
     }
 }
 
 struct DotsAnimation_Previews: PreviewProvider {
     static var previews: some View {
-        DotsAnimation()
+        DotsAnimation(color: .black)
     }
 }

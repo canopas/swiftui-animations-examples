@@ -8,40 +8,41 @@
 import SwiftUI
 
 struct StepperAnimation: View {
-
-    @State var front: Int = 0
-    @State var back: Int = 0
     
     @State var isFront = true
+    @State var front: Int = 0
+    @State var back: Int = 0
+    @State var animatedAngle = 0.0
+    @State var color: Color = .yellow
     
-    @State private var animatedAngle = 0.0
-
+    init(color: Color) {
+        self.color = color
+    }
+    
     var body: some View {
         ZStack {
-            Color.white
+            color
             ZStack {
                 Text("\(isFront ? front : back)")
                     .font(.system(size: 25))
-
+                
                 HStack {
-                    VStack {
-                    }
-                    .frame(width: 125, height: 100, alignment: .leading)
-                    .contentShape(Rectangle())
-                    .onTapGesture {
-                        onFlipPrevious()
-                    }
+                    VStack { }
+                        .frame(width: 125, height: 100, alignment: .leading)
+                        .contentShape(Rectangle())
+                        .onTapGesture {
+                            onFlipPrevious()
+                        }
                     
-                    VStack {
-                    }
-                    .frame(width: 125, height: 100, alignment: .trailing)
-                    .contentShape(Rectangle())
-                    .onTapGesture {
-                        onFlipNext()
-                    }
+                    VStack { }
+                        .frame(width: 125, height: 100, alignment: .trailing)
+                        .contentShape(Rectangle())
+                        .onTapGesture {
+                            onFlipNext()
+                        }
                 }
             }
-            .zIndex(isFront ? 1: 0)
+            .zIndex(isFront ? 1 : 0)
             .rotation3DEffect(Angle(degrees : isFront ? 0 : 180), axis: (x: 0.0, y: 1.0, z: 0.0))
         }
         .rotation3DEffect(Angle(degrees: animatedAngle), axis: (x: 0.0, y: 1.0, z: 0.0))
@@ -62,7 +63,7 @@ struct StepperAnimation: View {
     }
     
     func onFlipNext() {
-        if(isFront) {
+        if isFront {
             back = front + 1
         } else {
             front = back + 1
@@ -72,4 +73,8 @@ struct StepperAnimation: View {
             isFront = !isFront
         }
     }
+}
+
+#Preview {
+    StepperAnimation(color: .yellow)
 }

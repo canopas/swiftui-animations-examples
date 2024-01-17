@@ -8,19 +8,26 @@
 import SwiftUI
 
 struct WaveAnimation: View {
+    
     @State var scale1: CGFloat = 0
     @State var scale2: CGFloat = 0
     @State var scale3: CGFloat = 0
+    
+    @State var color: Color = .black
+    @State var iconColor: Color = .white
+    
+    init(color: Color, iconColor: Color) {
+        self.color = color
+        self.iconColor = iconColor
+    }
 
-    var foreverAnimation =
-        Animation.linear.speed(0.2)
-            .repeatForever(autoreverses: false)
+    var foreverAnimation = Animation.linear.speed(0.2).repeatForever(autoreverses: false)
 
     var body: some View {
         ZStack {
             Image(systemName: "circle.fill")
                 .font(.system(size: 60))
-                .foregroundColor(Color.white)
+                .foregroundColor(color)
                 .opacity(1 - scale1)
                 .scaleEffect(1 + (scale1 * 2))
                 .onAppear {
@@ -30,7 +37,7 @@ struct WaveAnimation: View {
                     }
             Image(systemName: "circle.fill")
                 .font(.system(size: 60))
-                .foregroundColor(Color.white)
+                .foregroundColor(color)
                 .opacity(1 - scale2)
                 .scaleEffect(1 + (scale2 * 2))
                 .onAppear {
@@ -42,7 +49,7 @@ struct WaveAnimation: View {
                 }
             Image(systemName: "circle.fill")
                 .font(.system(size: 60))
-                .foregroundColor(Color.white)
+                .foregroundColor(color)
                 .opacity(1 - scale3)
                 .scaleEffect(1 + (scale3 * 2))
                 .onAppear {
@@ -55,11 +62,15 @@ struct WaveAnimation: View {
             Image(systemName: "magnifyingglass")
                 .frame(width: 60, height: 60, alignment: .center)
                 .font(.system(size: 20))
-                .foregroundColor(Color.black)
-                .background(Color.white)
+                .foregroundColor(iconColor)
+                .background(color)
                 .cornerRadius(30)
 
 
         }
     }
+}
+
+#Preview {
+    WaveAnimation(color: .black, iconColor: .white)
 }

@@ -11,8 +11,12 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color.init("bgColor")
-            ClockAnimation()
+            TwinCircleScale()
         }
         .ignoresSafeArea()
     }
+}
+
+#Preview {
+    ContentView()
 }

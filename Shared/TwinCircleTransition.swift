@@ -1,5 +1,5 @@
 //
-//  TwinCircleAnimation.swift
+//  TwinCircleTransition.swift
 //  SwiftUIAnimations
 //
 //  Created by Jimmy S on 12/07/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TwinCircleAnimation: View {
+struct TwinCircleTransition: View {
     @State var tz: CGFloat = 0
     @State private var color1 = Color.blue
     @State private var color2 = Color.blue
@@ -67,6 +67,6 @@ struct TwinCircleAnimation: View {
 
 struct TwinCircleAnimation_Previews: PreviewProvider {
     static var previews: some View {
-        TwinCircleAnimation()
+        TwinCircleTransition()
     }
 }
