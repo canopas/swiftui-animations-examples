@@ -13,15 +13,21 @@ struct RotatingDotAnimation: View {
     @State private var startAnimation = false
     @State private var duration = 1.0 // Works as speed, since it repeats forever
     
+    @State var color: Color = .black
+    
+    init(color: Color) {
+        self.color = color
+    }
+    
     var body: some View {
         ZStack {
             Circle()
                 .stroke(lineWidth: 4)
-                .foregroundColor(.white.opacity(0.5))
+                .foregroundColor(color.opacity(0.5))
                 .frame(width: 150, height: 150, alignment: .center)
 
             Circle()
-                .fill(.white)
+                .fill(color)
                 .frame(width: 18, height: 18, alignment: .center)
                 .offset(x: -63)
                 .rotationEffect(.degrees(startAnimation ? 360 : 0))
@@ -37,6 +43,6 @@ struct RotatingDotAnimation: View {
 
 struct RotatingSquare_Previews: PreviewProvider {
     static var previews: some View {
-        RotatingDotAnimation()
+        RotatingDotAnimation(color: .black)
     }
 }

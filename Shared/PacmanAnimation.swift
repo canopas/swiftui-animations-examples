@@ -9,6 +9,12 @@ import SwiftUI
 
 struct PacmanAnimation: View {
     
+    @State var color: Color = .yellow
+    
+    init(color: Color) {
+        self.color = color
+    }
+    
     var body: some View {
         TimelineView(.animation) { timeline in
             Canvas { context, size in
@@ -21,7 +27,7 @@ struct PacmanAnimation: View {
                 )
                 path.addLine(to: center)
                 
-                context.fill(path, with: .color(.white))
+                context.fill(path, with: .color(color))
                 context.fill(Path(ellipseIn: CGRect(x: size.width / 2, y: size.height / 4, width: 10, height: 10)), with: .color(.black))
             }
             .frame(width: 150, height: 150)
@@ -31,6 +37,6 @@ struct PacmanAnimation: View {
 
 struct PacmanAnimation_Previews: PreviewProvider {
     static var previews: some View {
-        PacmanAnimation()
+        PacmanAnimation(color: .yellow)
     }
 }
