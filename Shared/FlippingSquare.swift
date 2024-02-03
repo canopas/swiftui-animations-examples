@@ -9,8 +9,8 @@ import SwiftUI
 
 struct FlippingSquare: View {
         
-    @State private var isAnimatingOuter = false
-    @State private var isAnimatingInner = false
+    @State private var isAnimatingVertically = false
+    @State private var isAnimatingHorizontally = false
     
     @State var color: Color
     
@@ -25,15 +25,15 @@ struct FlippingSquare: View {
             Rectangle()
                 .fill(color)
                 .frame(width: height, height: height)
-                .rotation3DEffect(.degrees(isAnimatingOuter ? 180 : 0), axis: (x: 1, y: 0, z: 0))
+                .rotation3DEffect(.degrees(isAnimatingVertically ? 180 : 0), axis: (x: 1, y: 0, z: 0))
                 .animation(Animation.linear(duration: 1).delay(1).repeatForever(autoreverses: false), value: UUID())
-                .rotation3DEffect(.degrees(isAnimatingInner ? 180 : 0), axis: (x: 0, y: 1, z: 0))
+                .rotation3DEffect(.degrees(isAnimatingHorizontally ? 180 : 0), axis: (x: 0, y: 1, z: 0))
                 .animation(Animation.linear(duration: 1).delay(1).repeatForever(autoreverses: false), value: UUID())
         }
         .onAppear {
-            isAnimatingOuter = true
+            isAnimatingVertically = true
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                isAnimatingInner = true
+                isAnimatingHorizontally = true
             }
         }
     }
