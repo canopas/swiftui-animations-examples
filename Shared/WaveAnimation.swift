@@ -20,9 +20,9 @@ struct WaveAnimation: View {
         self.color = color
         self.iconColor = iconColor
     }
-
+    
     var foreverAnimation = Animation.linear.speed(0.2).repeatForever(autoreverses: false)
-
+    
     var body: some View {
         ZStack {
             Image(systemName: "circle.fill")
@@ -31,10 +31,10 @@ struct WaveAnimation: View {
                 .opacity(1 - scale1)
                 .scaleEffect(1 + (scale1 * 2))
                 .onAppear {
-                        withAnimation(foreverAnimation) {
-                            scale1 = 1
-                        }
+                    withAnimation(foreverAnimation) {
+                        scale1 = 1
                     }
+                }
             Image(systemName: "circle.fill")
                 .font(.system(size: 60))
                 .foregroundColor(color)
@@ -65,8 +65,6 @@ struct WaveAnimation: View {
                 .foregroundColor(iconColor)
                 .background(color)
                 .cornerRadius(30)
-
-
         }
     }
 }

@@ -13,13 +13,13 @@ struct DotsAnimation: View {
         var delay: TimeInterval
         var ty: CGFloat
     }
-
+    
     static let DATA = [
         AnimationData(delay: 0.0, ty: -50),
         AnimationData(delay: 0.1, ty: -60),
         AnimationData(delay: 0.2, ty: -70),
     ]
-
+    
     @State var color: Color
     @State var transY: [CGFloat] = DATA.map { _ in return 0 }
     
@@ -28,7 +28,7 @@ struct DotsAnimation: View {
     init(color: Color) {
         self.color = color
     }
-
+    
     var body: some View {
         HStack {
             DotView(color: .constant(color), transY: $transY[0])
@@ -52,7 +52,7 @@ struct DotsAnimation: View {
             animateDots()
         }
     }
-
+    
     func animateDot(binding: Binding<CGFloat>, animationData: AnimationData) {
         withAnimation(animation) {
             binding.wrappedValue = animationData.ty
@@ -62,7 +62,6 @@ struct DotsAnimation: View {
             withAnimation(animation) {
                 binding.wrappedValue = 0
             }
-
         }
     }
 }

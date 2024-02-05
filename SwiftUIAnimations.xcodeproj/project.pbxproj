@@ -50,18 +50,28 @@
 		D81A81BD2B580A66003C270D /* ThreeRotatingDots.gif in Resources */ = {isa = PBXBuildFile; fileRef = D81A81B72B580A65003C270D /* ThreeRotatingDots.gif */; };
 		D81A81BE2B580A66003C270D /* ThreeCircleBlinkDots.gif in Resources */ = {isa = PBXBuildFile; fileRef = D81A81B82B580A65003C270D /* ThreeCircleBlinkDots.gif */; };
 		D81A81BF2B580A66003C270D /* TwinCircleScale.gif in Resources */ = {isa = PBXBuildFile; fileRef = D81A81B92B580A66003C270D /* TwinCircleScale.gif */; };
+		D81C0FF22B70E0360025DD77 /* ThreeTriangleSwapingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81C0FF12B70E0360025DD77 /* ThreeTriangleSwapingDots.swift */; };
+		D81C0FF32B70E0360025DD77 /* ThreeTriangleSwapingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81C0FF12B70E0360025DD77 /* ThreeTriangleSwapingDots.swift */; };
 		D8557BA42B5552FA0072E03D /* ThreeTriangleRotatingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8557BA32B5552FA0072E03D /* ThreeTriangleRotatingDots.swift */; };
 		D8557BA52B5552FA0072E03D /* ThreeTriangleRotatingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8557BA32B5552FA0072E03D /* ThreeTriangleRotatingDots.swift */; };
 		D8557BA72B555CAE0072E03D /* ThreeRotatingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8557BA62B555CAE0072E03D /* ThreeRotatingDots.swift */; };
 		D8557BA82B555CAE0072E03D /* ThreeRotatingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8557BA62B555CAE0072E03D /* ThreeRotatingDots.swift */; };
-		D8557BAA2B564B270072E03D /* ThreeHorizontalRotatingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8557BA92B564B270072E03D /* ThreeHorizontalRotatingDots.swift */; };
-		D8557BAB2B564B270072E03D /* ThreeHorizontalRotatingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8557BA92B564B270072E03D /* ThreeHorizontalRotatingDots.swift */; };
+		D8557BAA2B564B270072E03D /* ThreeHorizontalSwapingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8557BA92B564B270072E03D /* ThreeHorizontalSwapingDots.swift */; };
+		D8557BAB2B564B270072E03D /* ThreeHorizontalSwapingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8557BA92B564B270072E03D /* ThreeHorizontalSwapingDots.swift */; };
+		D896842A2B71059900D5F721 /* ThreeTriangleSwapingDots.gif in Resources */ = {isa = PBXBuildFile; fileRef = D89684262B71059900D5F721 /* ThreeTriangleSwapingDots.gif */; };
+		D896842B2B71059900D5F721 /* ThreeCircleBlinkingLines.gif in Resources */ = {isa = PBXBuildFile; fileRef = D89684272B71059900D5F721 /* ThreeCircleBlinkingLines.gif */; };
+		D896842C2B71059900D5F721 /* SquareFillAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = D89684282B71059900D5F721 /* SquareFillAnimation.gif */; };
+		D896842D2B71059900D5F721 /* ThreeHorizontalSwapingDots.gif in Resources */ = {isa = PBXBuildFile; fileRef = D89684292B71059900D5F721 /* ThreeHorizontalSwapingDots.gif */; };
+		D896842F2B710C7C00D5F721 /* LineWaveAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D896842E2B710C7C00D5F721 /* LineWaveAnimation.swift */; };
+		D89684332B71130200D5F721 /* LineWaveAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = D89684322B71130200D5F721 /* LineWaveAnimation.gif */; };
 		D8B37187293731F20051A626 /* ThreeBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B37186293731F20051A626 /* ThreeBounceAnimation.swift */; };
 		D8B37188293731F20051A626 /* ThreeBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B37186293731F20051A626 /* ThreeBounceAnimation.swift */; };
 		D8B3718A29377BAD0051A626 /* RotatingDotAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B3718929377BAD0051A626 /* RotatingDotAnimation.swift */; };
 		D8B3718B29377BAD0051A626 /* RotatingDotAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B3718929377BAD0051A626 /* RotatingDotAnimation.swift */; };
 		D8B3718D293881970051A626 /* ClockAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B3718C293881970051A626 /* ClockAnimation.swift */; };
 		D8B3718E293881970051A626 /* ClockAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B3718C293881970051A626 /* ClockAnimation.swift */; };
+		D8E5A7A32B70B3FC0051C0DF /* ThreeCircleBlinkingLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E5A7A22B70B3FC0051C0DF /* ThreeCircleBlinkingLines.swift */; };
+		D8E5A7A42B70B3FC0051C0DF /* ThreeCircleBlinkingLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E5A7A22B70B3FC0051C0DF /* ThreeCircleBlinkingLines.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,12 +107,20 @@
 		D81A81B72B580A65003C270D /* ThreeRotatingDots.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ThreeRotatingDots.gif; sourceTree = "<group>"; };
 		D81A81B82B580A65003C270D /* ThreeCircleBlinkDots.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ThreeCircleBlinkDots.gif; sourceTree = "<group>"; };
 		D81A81B92B580A66003C270D /* TwinCircleScale.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = TwinCircleScale.gif; sourceTree = "<group>"; };
+		D81C0FF12B70E0360025DD77 /* ThreeTriangleSwapingDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeTriangleSwapingDots.swift; sourceTree = "<group>"; };
 		D8557BA32B5552FA0072E03D /* ThreeTriangleRotatingDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeTriangleRotatingDots.swift; sourceTree = "<group>"; };
 		D8557BA62B555CAE0072E03D /* ThreeRotatingDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeRotatingDots.swift; sourceTree = "<group>"; };
-		D8557BA92B564B270072E03D /* ThreeHorizontalRotatingDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeHorizontalRotatingDots.swift; sourceTree = "<group>"; };
+		D8557BA92B564B270072E03D /* ThreeHorizontalSwapingDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeHorizontalSwapingDots.swift; sourceTree = "<group>"; };
+		D89684262B71059900D5F721 /* ThreeTriangleSwapingDots.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ThreeTriangleSwapingDots.gif; sourceTree = "<group>"; };
+		D89684272B71059900D5F721 /* ThreeCircleBlinkingLines.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ThreeCircleBlinkingLines.gif; sourceTree = "<group>"; };
+		D89684282B71059900D5F721 /* SquareFillAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SquareFillAnimation.gif; sourceTree = "<group>"; };
+		D89684292B71059900D5F721 /* ThreeHorizontalSwapingDots.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ThreeHorizontalSwapingDots.gif; sourceTree = "<group>"; };
+		D896842E2B710C7C00D5F721 /* LineWaveAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineWaveAnimation.swift; sourceTree = "<group>"; };
+		D89684322B71130200D5F721 /* LineWaveAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LineWaveAnimation.gif; sourceTree = "<group>"; };
 		D8B37186293731F20051A626 /* ThreeBounceAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeBounceAnimation.swift; sourceTree = "<group>"; };
 		D8B3718929377BAD0051A626 /* RotatingDotAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingDotAnimation.swift; sourceTree = "<group>"; };
 		D8B3718C293881970051A626 /* ClockAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockAnimation.swift; sourceTree = "<group>"; };
+		D8E5A7A22B70B3FC0051C0DF /* ThreeCircleBlinkingLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeCircleBlinkingLines.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +162,7 @@
 				9BA95BE32825021E00A43D98 /* HeartAnimation.swift */,
 				D8B3718C293881970051A626 /* ClockAnimation.swift */,
 				9BA95BE62825023C00A43D98 /* StepperAnimation.swift */,
+				D896842E2B710C7C00D5F721 /* LineWaveAnimation.swift */,
 				9BEE82BF287D4B200047462A /* PacmanAnimation.swift */,
 				D81A81992B565A2D003C270D /* FlippingSquare.swift */,
 				D81A81A22B56CCF3003C270D /* TwinCircleScale.swift */,
@@ -153,9 +172,11 @@
 				D8B3718929377BAD0051A626 /* RotatingDotAnimation.swift */,
 				D8557BA62B555CAE0072E03D /* ThreeRotatingDots.swift */,
 				D81A819C2B5686C7003C270D /* ThreeCircleBlinkDots.swift */,
+				D8E5A7A22B70B3FC0051C0DF /* ThreeCircleBlinkingLines.swift */,
 				D8B37186293731F20051A626 /* ThreeBounceAnimation.swift */,
 				D8557BA32B5552FA0072E03D /* ThreeTriangleRotatingDots.swift */,
-				D8557BA92B564B270072E03D /* ThreeHorizontalRotatingDots.swift */,
+				D81C0FF12B70E0360025DD77 /* ThreeTriangleSwapingDots.swift */,
+				D8557BA92B564B270072E03D /* ThreeHorizontalSwapingDots.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -190,11 +211,16 @@
 				D801716F293A313600F95578 /* ThreeBounceAnimation.gif */,
 				D8017170293A313600F95578 /* PacmanAnimation.gif */,
 				D81A81B62B580A65003C270D /* ArcRotationAnimation.gif */,
+				D89684322B71130200D5F721 /* LineWaveAnimation.gif */,
 				D81A81B42B580A65003C270D /* FlippingSquare.gif */,
 				D81A81B82B580A65003C270D /* ThreeCircleBlinkDots.gif */,
 				D81A81B72B580A65003C270D /* ThreeRotatingDots.gif */,
 				D81A81B52B580A65003C270D /* ThreeTriangleRotatingDots.gif */,
 				D81A81B92B580A66003C270D /* TwinCircleScale.gif */,
+				D89684282B71059900D5F721 /* SquareFillAnimation.gif */,
+				D89684272B71059900D5F721 /* ThreeCircleBlinkingLines.gif */,
+				D89684292B71059900D5F721 /* ThreeHorizontalSwapingDots.gif */,
+				D89684262B71059900D5F721 /* ThreeTriangleSwapingDots.gif */,
 			);
 			path = GIF;
 			sourceTree = "<group>";
@@ -278,16 +304,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D896842A2B71059900D5F721 /* ThreeTriangleSwapingDots.gif in Resources */,
 				D8017171293A313600F95578 /* HeartAnimation.gif in Resources */,
+				D89684332B71130200D5F721 /* LineWaveAnimation.gif in Resources */,
 				D81A81BB2B580A66003C270D /* ThreeTriangleRotatingDots.gif in Resources */,
 				D8017176293A313600F95578 /* WaveAnimation.gif in Resources */,
 				D81A81BF2B580A66003C270D /* TwinCircleScale.gif in Resources */,
+				D896842B2B71059900D5F721 /* ThreeCircleBlinkingLines.gif in Resources */,
 				D8017172293A313600F95578 /* ClockAnimation.gif in Resources */,
+				D896842D2B71059900D5F721 /* ThreeHorizontalSwapingDots.gif in Resources */,
 				D8017178293A313600F95578 /* ThreeBounceAnimation.gif in Resources */,
 				D81A81BE2B580A66003C270D /* ThreeCircleBlinkDots.gif in Resources */,
 				D8017177293A313600F95578 /* StepperAnimation.gif in Resources */,
 				D8017179293A313600F95578 /* PacmanAnimation.gif in Resources */,
 				9B59C2D5280852530016F2F8 /* Assets.xcassets in Resources */,
+				D896842C2B71059900D5F721 /* SquareFillAnimation.gif in Resources */,
 				D8017173293A313600F95578 /* RotatingDotAnimation.gif in Resources */,
 				D81A81BC2B580A66003C270D /* ArcRotationAnimation.gif in Resources */,
 				D8017174293A313600F95578 /* DotAnimation.gif in Resources */,
@@ -323,14 +354,17 @@
 				9B59C2D1280852530016F2F8 /* SwiftUIAnimationsApp.swift in Sources */,
 				D8B37187293731F20051A626 /* ThreeBounceAnimation.swift in Sources */,
 				D81A819D2B5686C7003C270D /* ThreeCircleBlinkDots.swift in Sources */,
+				D896842F2B710C7C00D5F721 /* LineWaveAnimation.swift in Sources */,
 				9BA95BEA282521F900A43D98 /* DotsAnimation.swift in Sources */,
-				D8557BAA2B564B270072E03D /* ThreeHorizontalRotatingDots.swift in Sources */,
+				D8557BAA2B564B270072E03D /* ThreeHorizontalSwapingDots.swift in Sources */,
 				9BA95BE42825021E00A43D98 /* HeartAnimation.swift in Sources */,
 				D81A819A2B565A2D003C270D /* FlippingSquare.swift in Sources */,
+				D81C0FF22B70E0360025DD77 /* ThreeTriangleSwapingDots.swift in Sources */,
 				D81A81A62B57A98A003C270D /* SquareFillAnimation.swift in Sources */,
 				9BEE82C0287D4B200047462A /* PacmanAnimation.swift in Sources */,
 				D8557BA72B555CAE0072E03D /* ThreeRotatingDots.swift in Sources */,
 				D81A81A02B56C538003C270D /* ArcRotationAnimation.swift in Sources */,
+				D8E5A7A32B70B3FC0051C0DF /* ThreeCircleBlinkingLines.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,13 +384,15 @@
 				D8B37188293731F20051A626 /* ThreeBounceAnimation.swift in Sources */,
 				D81A819E2B5686C7003C270D /* ThreeCircleBlinkDots.swift in Sources */,
 				9BA95BEB282521F900A43D98 /* DotsAnimation.swift in Sources */,
-				D8557BAB2B564B270072E03D /* ThreeHorizontalRotatingDots.swift in Sources */,
+				D8557BAB2B564B270072E03D /* ThreeHorizontalSwapingDots.swift in Sources */,
 				9BA95BE52825021E00A43D98 /* HeartAnimation.swift in Sources */,
 				D81A819B2B565A2D003C270D /* FlippingSquare.swift in Sources */,
+				D81C0FF32B70E0360025DD77 /* ThreeTriangleSwapingDots.swift in Sources */,
 				D81A81A72B57A98A003C270D /* SquareFillAnimation.swift in Sources */,
 				9BEE82C1287D4B200047462A /* PacmanAnimation.swift in Sources */,
 				D8557BA82B555CAE0072E03D /* ThreeRotatingDots.swift in Sources */,
 				D81A81A12B56C538003C270D /* ArcRotationAnimation.swift in Sources */,
+				D8E5A7A42B70B3FC0051C0DF /* ThreeCircleBlinkingLines.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
