@@ -25,7 +25,7 @@ struct RotatingDotAnimation: View {
                 .stroke(lineWidth: 4)
                 .foregroundColor(color.opacity(0.5))
                 .frame(width: 150, height: 150, alignment: .center)
-
+            
             Circle()
                 .fill(color)
                 .frame(width: 18, height: 18, alignment: .center)

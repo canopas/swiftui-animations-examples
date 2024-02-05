@@ -9,23 +9,23 @@ import SwiftUI
 
 struct SquareFillAnimation: View {
     
-	@State var color: Color
+    @State var color: Color
     @State private var isAnimatingOuter = false
     @State private var isAnimatingInner = false
     
-	private let duration: CGFloat = 0.8
+    private let duration: CGFloat = 0.8
     private let squareHeight: CGFloat = 150
-	
-	init(color: Color) {
-		self.color = color
-	}
+    
+    init(color: Color) {
+        self.color = color
+    }
     
     var body: some View {
         ZStack {
             Rectangle()
                 .fill(color)
                 .frame(width: squareHeight, height: squareHeight)
-				.scaleEffect(x: 1, y: isAnimatingInner ? 1 : 0, anchor: .bottom)
+                .scaleEffect(x: 1, y: isAnimatingInner ? 1 : 0, anchor: .bottom)
                 .animation(Animation.easeInOut(duration: duration).delay(duration).repeatForever(autoreverses: false), value: UUID())
                 .clipped()
             
@@ -45,5 +45,5 @@ struct SquareFillAnimation: View {
 }
 
 #Preview {
-	SquareFillAnimation(color: .black)
+    SquareFillAnimation(color: .black)
 }

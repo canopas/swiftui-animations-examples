@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FlippingSquare: View {
-        
+    
     @State private var isAnimatingVertically = false
     @State private var isAnimatingHorizontally = false
     

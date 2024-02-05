@@ -11,7 +11,7 @@ struct TwinCircleTransition: View {
     @State var tz: CGFloat = 0
     @State private var color1 = Color.blue
     @State private var color2 = Color.blue
-
+    
     var body: some View {
         ZStack {
             VStack{}
@@ -44,7 +44,7 @@ struct TwinCircleTransition: View {
             tz = 1
             color1 = Color.cyan
             color2 = Color.green
-
+            
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
