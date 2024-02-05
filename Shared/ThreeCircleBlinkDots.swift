@@ -34,7 +34,7 @@ struct ThreeCircleBlinkDots: View {
             }
         }
         .onReceive(timer, perform: { _ in
-            withAnimation(Animation.easeInOut(duration: 1).repeatCount(1, autoreverses: true)) {
+			withAnimation(Animation.easeInOut(duration: 0.35).repeatCount(1, autoreverses: true)) {
                 current = current == (totalDots - 1) ? 0 : current + 1
             }
         })

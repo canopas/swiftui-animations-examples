@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color.init("bgColor")
-            TwinCircleScale()
+			SquareFillAnimation(color: .white)
         }
         .ignoresSafeArea()
     }
