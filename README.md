@@ -10,33 +10,15 @@ Cool animations implemented with SwiftUI.
       <br /> Clock
     </td>
     <td align="center">
-      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/DotAnimation.gif" width="250px" height="250px">
-      <br /> Progress Dots
-    </td>
-    <td align="center">
-      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/HeartAnimation.gif" width="250px" height="250px">
-      <br /> Jumping Heart
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
       <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/PacmanAnimation.gif" width="250px" height="250px">
       <br /> Pacman
     </td>
     <td align="center">
-      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/RotatingDotAnimation.gif" width="250px" height="250px">
-      <br /> Rotating Dot
-    </td>
-    <td align="center">
       <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/StepperAnimation.gif" width="250px" height="250px">
-      <br /> Stepper Animation
+      <br /> Stepper
     </td> 
   </tr>
   <tr>
-    <td align="center">
-      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/WaveAnimation.gif" width="250px" height="250px">
-      <br /> Wave Animation
-    </td>
     <td align="center">
       <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/TwinCircleAnimation.gif" width="250px" height="250px">
       <br /> Twin Circle Transition
@@ -45,6 +27,10 @@ Cool animations implemented with SwiftUI.
       <img src="https://github.com/canopas/swiftui-animations-examples/blob/main/GIF/TwinCircleScale.gif" width="250px" height="250px">
       <br /> Twin Circle Scale
     </td>
+    <td align="center">
+      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/ArcRotationAnimation.gif" width="250px" height="250px">
+      <br /> Arc Rotation
+    </td>
   </tr>
   <tr>
     <td align="center">
@@ -52,26 +38,64 @@ Cool animations implemented with SwiftUI.
       <br /> Flipping Square
     </td>
     <td align="center">
-      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/ArcRotationAnimation.gif" width="250px" height="250px">
-      <br /> Arc Rotation
+      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/SquareFillAnimation.gif" width="250px" height="250px">
+      <br /> Square Fill
     </td>
     <td align="center">
-      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/ThreeTriangleRotatingDots.gif" width="250px" height="250px">
-      <br /> Triangle Rotating Dots
+      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/LineWaveAnimation.gif" width="250px" height="250px">
+      <br /> Line Waves
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/WaveAnimation.gif" width="250px" height="250px">
+      <br /> Wave Animation
+    </td>
+    <td align="center">
+      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/RotatingDotAnimation.gif" width="250px" height="250px">
+      <br /> Rotating Dot
+    </td>
+    <td align="center">
+      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/HeartAnimation.gif" width="250px" height="250px">
+      <br /> Jumping Heart
     </td>
   </tr>
   <tr>
     <td align="center">
       <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/ThreeCircleBlinkDots.gif" width="250px" height="250px">
-      <br /> Circle Blink Dots
+      <br /> Circle Blinking Dots
+    </td>
+    <td align="center">
+      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/ThreeCircleBlinkingLines.gif" width="250px" height="250px">
+      <br /> Circle Blinking Lines
+    </td>
+    <td align="center">
+      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/ThreeBounceAnimation.gif" width="250px" height="250px">
+      <br /> Three Bounce Dot
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/DotAnimation.gif" width="250px" height="250px">
+      <br /> Three Progress Dots
     </td>
     <td align="center">
       <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/ThreeRotatingDots.gif" width="250px" height="250px">
       <br /> Three Rotating Dot
     </td>
     <td align="center">
-      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/ThreeBounceAnimation.gif" width="250px" height="250px">
-      <br /> Three Bounce Dot
+      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/ThreeHorizontalSwapingDots.gif" width="250px" height="250px">
+      <br /> Horizontal Swapping Dots
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/ThreeTriangleRotatingDots.gif" width="250px" height="250px">
+      <br /> Triangle Rotating Dots
+    </td>
+    <td align="center">
+      <img src="https://github.com/canopas/Swiftui-animations-examples/blob/main/GIF/ThreeTriangleSwapingDots.gif" width="250px" height="250px">
+      <br /> Triangle Swapping Dots
     </td>
   </tr>
 <table>
