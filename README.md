@@ -1,3 +1,6 @@
+
+<img width="930" alt="banner" src="https://github.com/canopas/swiftui-animations-examples/assets/73588408/9c5b5d79-28c1-42a3-9e0e-a9dacd41b075">
+
 # Swiftui-animations-examples
 Cool animations implemented with SwiftUI.
 
@@ -99,18 +102,18 @@ Cool animations implemented with SwiftUI.
     </td>
   </tr>
 <table>
-  
-  
+
 
 For detailed information about implementation checkout [article 1](https://blog.canopas.com/animations-in-swiftui-with-examples-dfb616fe467f), [article 2](https://blog.canopas.com/ios-animations-in-swiftui-with-examples-part-2-980a2df69145) & [article 3](https://medium.com/canopas/animations-in-swiftui-with-examples-part-3-56411ae2ffe0).
 
 
 # Bugs and Feedback
-For bugs, questions and discussions please use the [Github Issues](https://github.com/canopas/Swiftui-animations-examples/issues).
+For bugs, questions, and discussions please use the [Github Issues](https://github.com/canopas/Swiftui-animations-examples/issues).
 
 # Credits
-This repository owned and maintained by the [Canopas team](https://canopas.com/). You can follow them on Twitter at [@canopassoftware](https://twitter.com/canopassoftware) for project updates and releases.
-  
+This repository is owned and maintained by the [Canopas team](https://canopas.com/). You can follow them on Twitter at [@canopassoftware](https://twitter.com/canopassoftware) for the project updates and releases.
+
+<a href="https://canopas.com/contact"><img src="https://github.com/canopas/swiftui-animations-examples/assets/73588408/3afa16bb-0094-4c1b-9761-e2dfe33d183f" width=250></a>
 
 # Licence
 
@@ -118,7 +121,7 @@ This repository owned and maintained by the [Canopas team](https://canopas.com/)
 Copyright 2022 Canopas Software LLP
 
 Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
+You won't be using this file except in compliance with the License.
 You may obtain a copy of the License at
 
    http://www.apache.org/licenses/LICENSE-2.0
