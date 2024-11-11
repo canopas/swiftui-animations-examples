@@ -104,7 +104,7 @@ Cool animations implemented with SwiftUI.
 <table>
 
 
-For detailed information about implementation checkout [article 1](https://blog.canopas.com/animations-in-swiftui-with-examples-dfb616fe467f), [article 2](https://blog.canopas.com/ios-animations-in-swiftui-with-examples-part-2-980a2df69145) & [article 3](https://medium.com/canopas/animations-in-swiftui-with-examples-part-3-56411ae2ffe0).
+For detailed information about implementation checkout [article 1](https://canopas.com/animations-in-swiftui-with-examples-dfb616fe467f), [article 2](https://canopas.com/ios-animations-in-swiftui-with-examples-part-2-980a2df69145), [article 3](https://canopas.com/animations-in-swiftui-with-examples-part-3-56411ae2ffe0), & [article 4](https://canopas.com/animations-in-swift-ui-with-examples-part-4).
 
 
 # Bugs and Feedback
