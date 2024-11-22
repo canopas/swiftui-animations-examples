@@ -111,7 +111,7 @@ For detailed information about implementation checkout [article 1](https://canop
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/canopas/Swiftui-animations-examples/issues).
 
 # Credits
-This repository is owned and maintained by the [Canopas team](https://canopas.com/). You can follow them on Twitter at [@canopassoftware](https://twitter.com/canopassoftware) for the project updates and releases.
+This repository is owned and maintained by the [Canopas team](https://canopas.com/). You can follow them on X at [@canopas_eng](https://x.com/canopas_eng) for the project updates and releases.
 
 <a href="https://canopas.com/contact"><img src="https://github.com/canopas/swiftui-animations-examples/assets/73588408/3afa16bb-0094-4c1b-9761-e2dfe33d183f" width=250></a>
 
